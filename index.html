@@ -10,49 +10,34 @@
   </head>
   <body>
     <div class="container">
-      <h1>Make an Appointment to Hang Out!</h1>
-      <p>Hey friends! Please make an appointment below so we can <strong>FINALLY</strong> hang out!</p>
+      <div class="well">
+        <h1>Make an Appointment</h1>
+      </div>
 
-      <div id="appointment">
-        <form>
+      <h3>Set Appointment:</h3>
+      <div class="row">
+        <div class="col-md-6">
+          <form id="info">
+            <label for="name">Name:</label>
+            <input id="name" class="form-control" type="text">
+          </form>
+        </div>
+        <div class="col-md-6">
           <div class="form-group">
-            <label for="person">Name:</label>
-            <input id="person" class="form-control" type="text">
-          </div>
-
-          <div class="form-group">
-            <label for="description">What do you want to do?</label>
-            <input id="description" class="form-control" type="text">
-          </div>
-
-          <div class="form-group">
-            <label for="date">Date:</label>
-            <input id="date" class="form-control" type="text">
-          </div>
-
-          <div class="form-group">
-            <label for="start">Start time:</label>
-            <input id="start" class="form-control" type="text">
-          </div>
-
-          <div class="form-group">
-            <label for="end">End time:</label>
-            <input id="end" class="form-control" type="text">
-          </div>
-
-          <button type="submit" class="btn btn-success">Book Appointment</button>
-        </form>
-
-        <div class="confirmPage">
-          <h3>Thanks for making an appointment! Can't wait to hang out with you!</h3>
-          <div class="reprintInfo">
-            <ul>
-              <li><strong>Name:</strong> <span class="name"></span></li>
-              <li><strong>What do you want to do?</strong><span class="what"> </span></li>
-
+            <label for="date">Date to hang out:</label>
+            <input id="date" class="form-control" type="date">
           </div>
         </div>
       </div>
+
+      <form id="description">
+        <div class="form-group">
+          <label for="whatToDo">Describe Appointment:</label>
+          <input id="whatToDo" class="form-control" type="text">
+        </div>
+      </form>
+
+
     </div>
   </body>
 </html>
